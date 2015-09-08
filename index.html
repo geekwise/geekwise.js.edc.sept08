@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <script type="text/javascript">
+        
+
+        document.write('<h1>text from javascript</h1>');
+        
+        function get_name(){
+        
+            var prompt_text = prompt('what text to add?');
+            prompt_text;
+            return prompt_text;
+                
+        };
+        
+        
+        document.addEventListener('DOMContentLoaded',function(){
+            
+            var h1_tags = document.getElementsByTagName('h1');
+            
+            h1_tags[0].addEventListener('dblclick',function(){
+            
+                this.innerText = get_name();
+                
+            });
+        
+        });
+        
+        
+     </script>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
