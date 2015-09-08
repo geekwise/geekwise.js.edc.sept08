@@ -20,7 +20,10 @@
             
             var h1_tags = document.getElementsByTagName('h1');
             
-            h1_tags[0].addEventListener('dblclick',function(){
+            h1_tags[0].style.fontSize = '500%';
+            
+            
+            h1_tags[0].addEventListener('touchstart',function(){
             
                 this.innerText = get_name();
                 
